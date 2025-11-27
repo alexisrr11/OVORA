@@ -41,7 +41,7 @@ document.getElementById("form").addEventListener("submit", function (e) {
     const telefono = "541122356695";
 
     // Mensaje prellenado
-    const mensaje = `Hola! Mi nombre es ${nombre} y estoy interesado/a en el producto: ${producto}`;
+    const mensaje = `Hola! Mi nombre es ${nombre} y estoy interesado/a en el: ${producto}`;
 
     // URL de WhatsApp
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
@@ -91,4 +91,5 @@ function activarZoom(imagen) {
     modal.classList.remove('flex');
   });
 }
+
 
