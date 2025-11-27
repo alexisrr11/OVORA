@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veladores - MVP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body class="bg-neutral-900 text-white">
+
+  <!-- Pantalla inicial 100vh -->
+  <section
+    class="w-full h-screen flex flex-col items-center justify-center px-6 bg-[url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b')] bg-cover bg-center">
+
+    <!-- Marca -->
+    <div class="w-full flex items-center justify-start p-2 text-lime-200 md:absolute top-1 left-1">
+      <h1 class="text-left">
+        <strong class="text-xl font-[cursive]">OVORA</strong> <span class="text-xs text-lime-50">(Printing
+          Dreams)</span>
+      </h1>
+    </div>
+
+    <!-- Título -->
+    <h2 class="text-4xl md:text-6xl font-extrabold mb-4 text-center">Veladores modernos</h2>
+    <p class="text-lg text-white/80 mb-1 text-center max-w-xl">
+      Iluminación elegante para cada rincón de tu hogar
+    </p>
+    <p class="text-lg text-lime-200/80 mb-5 text-center max-w-xl">
+      ( Envíos a toda Zona Sur )
+    </p>
+    <!-- Carrusel -->
+    <div class="relative w-full max-w-4xl">
+
+      <!-- Contenedor slides -->
+      <div class="relative w-full max-w-4xl">
+        <div id="carousel" class="overflow-hidden relative rounded-2xl shadow-2xl">
+          <div id="slides" class="flex transition-transform duration-700 ease-in-out"></div>
+        </div>
+
+        <button id="prev"
+          class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black p-3 rounded-full">❮</button>
+        <button id="next"
+          class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black p-3 rounded-full">❯</button>
+      </div>
+  </section>
+
+  <!-- MODAL -->
+  <div id="modalInicio" class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 hidden">
+    <div class="relative bg-white rounded-2xl p-4 shadow-xl max-w-md w-full mx-4">
+
+      <!-- Botón cerrar -->
+      <button id="cerrarModal" class="absolute top-2 right-2 text-gray-500 hover:text-black text-xl">
+        ✕
+      </button>
+
+      <!-- Imagen del modal -->
+      <img src="./images/Ignaguracion.jpeg" alt="Promo"
+        class="rounded-xl w-full object-cover" />
+    </div>
+  </div>
+
+</body>
+
+</html>

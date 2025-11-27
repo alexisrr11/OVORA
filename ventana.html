@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="verProducto.js"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <style>
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .animate-bounce-slow {
+      animation: float 2s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-neutral-900 text-white">
+
+  <!-- Pantalla inicial 100vh -->
+  <section
+    class="w-full h-screen flex flex-col items-center justify-center px-6 bg-[url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b')] bg-cover bg-center">
+
+    <!-- Marca -->
+    <div class="w-full flex items-center justify-start p-2 text-lime-200 md:absolute top-1 left-1">
+      <a href="./index.html">
+        <h1 class="text-left">
+          <strong class="text-xl font-[cursive]">OVORA</strong> <span class="text-lime-50 text-xs">(Printing
+            Dreams)</span>
+        </h1>
+      </a>
+    </div>
+  </section>
+
+  <!-- Botón flotante -->
+  <button id="scrollDownBtn"
+    class="absolute bottom-[70px] right-[45%] text-5xl bg-black/50 rounded-full p-2 animate-bounce-slow">
+    <i class='bx bx-chevrons-down'></i>
+  </button>
+
+  <!-- Contacto -->
+  <section id="contacto" class="bg-lime-100/70 py-12 px-4">
+    <div class="container mx-auto max-w-xl">
+      <h2 class="text-3xl font-[cursive] font-bold text-center mb-8">Contactanos</h2>
+      <form class="bg-white p-8 rounded-lg shadow space-y-4" id="form">
+        <input class="w-full border-2 border-lime-200/80 rounded p-2 text-black" type="text" name="name"
+          placeholder="Nombre Completo" required>
+        <input class="w-full border-2 border-lime-200/80 rounded p-2 text-black" type="text" name="producto"
+          placeholder="Producto..." required>
+        <button class="bg-lime-600/60 text-white px-4 py-2 rounded hover:bg-lime-600/90 transition" type="submit">
+          Enviar <i class='text-lg bx bxl-whatsapp'></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modalZoom" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-20">
+    <img id="imagenZoom" class="max-w-[90%] max-h-[90%] rounded-xl">
+  </div>
+
+  <script>
+    // Al hacer click, scrollea hasta el final del viewport
+    const btnScroll = document.getElementById("scrollDownBtn");
+    btnScroll.addEventListener("click", () => {
+      window.scrollBy({
+        top: window.innerHeight, // baja una pantalla completa (100vh)
+        behavior: "smooth"
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "nombre": "Velador Eclipse",
+    "descripcion": "Diseño moderno con lineas detalladas (base de plastico)",
+    "medidas": "Alto: 16cm - CircunferenciaMax: 10cm",
+    "precio": 15000,
+    "transferencia": 18000, 
+    "imagen": "./images/eplipce.jpeg"
+  },
+  {
+    "id": "2",
+    "nombre": "Velador Rectangular",
+    "descripcion": "Pantalla suave con luz cálida (base de plastico)",
+    "medidas": "Alto: 14cm - Ancho: 96cm",
+    "precio": 12000,
+    "transferencia": 14500,
+    "imagen": "./images/rectangular.jpeg"
+  },
+  {
+    "id": "3",
+    "nombre": "Velador Redondo",
+    "descripcion": "Estilo urbano con estructura minimalista (base de plastico)",
+    "medidas": "Alto: 10cm - CircunferenciaMax: 8cm",
+    "precio": 10000,
+    "transferencia": 12000, 
+    "imagen": "./images/redonda.jpeg"
+  }
+]
