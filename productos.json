@@ -6,7 +6,7 @@
     "medidas": "Alto: 16cm - CircunferenciaMax: 10cm",
     "precio": 15000,
     "transferencia": 18000, 
-    "imagen": "./images/eplipce.jpeg"
+    "imagen": "./images/eclipceUno.jpeg"
   },
   {
     "id": "2",
@@ -15,7 +15,7 @@
     "medidas": "Alto: 14cm - Ancho: 96cm",
     "precio": 12000,
     "transferencia": 14500,
-    "imagen": "./images/Rectangular.jpeg"
+    "imagen": "./images/rectangularUno.png"
   },
   {
     "id": "3",
@@ -24,7 +24,6 @@
     "medidas": "Alto: 10cm - CircunferenciaMax: 8cm",
     "precio": 10000,
     "transferencia": 12000, 
-    "imagen": "./images/redonda.jpeg"
+    "imagen": "./images/redondaUno.png"
   }
-
 ]
