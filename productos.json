@@ -15,7 +15,7 @@
     "medidas": "Alto: 14cm - Ancho: 96cm",
     "precio": 12000,
     "transferencia": 14500,
-    "imagen": "./images/rectangular.jpeg"
+    "imagen": "./images/Rectangular.jpeg"
   },
   {
     "id": "3",
@@ -26,4 +26,5 @@
     "transferencia": 12000, 
     "imagen": "./images/redonda.jpeg"
   }
+
 ]
