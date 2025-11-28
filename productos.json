@@ -25,5 +25,15 @@
     "precio": 10000,
     "transferencia": 12000, 
     "imagen": "./images/redondaUno.png"
+  },
+  {
+    "id": "4",
+    "nombre": "Velador de Luna con imagen",
+    "descripcion": "Revela una imagen detallada y suave, creando un efecto cálido, mágico y lleno de profundidad.",
+    "medidas": "Alto: 15cm - CircunferenciaMax: 12cm",
+    "precio": 18000,
+    "transferencia": 21000, 
+    "imagen": "./images/lunaConImagen.png"
   }
 ]
+
