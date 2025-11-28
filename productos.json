@@ -21,7 +21,7 @@
     "id": "3",
     "nombre": "Velador Rectangular",
     "descripcion": "Pantalla suave con luz cálida (base de plastico)",
-    "medidas": "Alto: 14cm - Ancho: 96cm",
+    "medidas": "Alto: 14cm - Ancho: 9.6cm",
     "precio": 12000,
     "transferencia": 14500,
     "imagen": "./images/rectangularUno.png"
@@ -36,3 +36,4 @@
     "imagen": "./images/redondaUno.png"
   }
 ]
+
