@@ -15,8 +15,8 @@ fetch('./productos.json')
           <div class="flex justify-around items-center mt-4">
             <span class="text-xl font-semibold"><span class="text-lime-200/70">EF</span> $${producto.precio}</span>
             <button 
-              class="btn-consultar text-blue-400 hover:underline">
-              Consultar
+              class="btn-consultar text-blue-400 font-semibold hover:underline">
+              Ver más
             </button>
           </div>
         </div>
@@ -78,3 +78,4 @@ window.addEventListener('load', () => {
     }
   });
 });
+
