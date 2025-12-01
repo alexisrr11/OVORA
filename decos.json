@@ -1,0 +1,38 @@
+[
+  {
+    "id": "d1",
+    "nombre": "Reno Navideño",
+    "descripcion": "Un tierno reno decorativo que aporta calidez y espíritu navideño a cualquier rincón: ideal para mesas, repisas o escritorios.",
+    "medidas": "Alto: 12cm - Ancho: 7cm",
+    "precio": 1000,
+    "transferencia": 1200,
+    "imagen": "./images/renoNavidad.jpeg"
+  },
+  {
+    "id": "d2",
+    "nombre": "Copo de Nieve Navideño",
+    "descripcion": "Un delicado copo de nieve decorativo que le da un toque invernal, elegante y minimalista a tus espacios.",
+    "medidas": "Alto: 8cm - Ancho: 6cm",
+    "precio": 1500,
+    "transferencia": 1800,
+    "imagen": "./images/copoNieve.jpeg"
+  },
+  {
+    "id": "d3",
+    "nombre": "Arbolito Navideño",
+    "descripcion": "Un pequeño y encantador arbolito ideal para sumar un detalle festivo, sutil y moderno en tu decoración.",
+    "medidas": "Alto: 10cm - Ancho: 5cm",
+    "precio": 900,
+    "transferencia": 1100,
+    "imagen": "./images/arbolito.jpeg"
+  },
+  {
+    "id": "d4",
+    "nombre": "Soporte para celular souvenir",
+    "descripcion": "Soporte para celular con diseño moderno y funcional, perfecto como recuerdo, regalo o para organizar tu espacio con estilo.",
+    "medidas": "Alto: 22cm - Base: 12cm",
+    "precio": 5500,
+    "transferencia": 6600,
+    "imagen": "./images/posaCelular.jpeg"
+  }
+]

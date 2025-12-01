@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Decoraciones 3D - OVORA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="./decoraciones.js"></script>
+</head>
+
+<body class="bg-neutral-900 text-white">
+
+  <!-- Pantalla inicial 100vh -->
+  <section
+    class="w-full min-h-screen flex flex-col items-center justify-center px-4 py-6
+    bg-[url('https://images.unsplash.com/photo-1502673530728-f79b4cab31b1')]
+    bg-cover bg-center relative">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/80"></div>
+
+    <!-- Marca -->
+    <div class="w-full flex items-center justify-start p-2 text-lime-200 absolute top-1 left-1 z-10">
+      <a href="./index.html">
+        <h1 class="text-left text-xl">
+          <strong class="text-2xl font-[cursive]">OVORA</strong>
+          <span class="text-lime-50 text-xs">(Printing Dreams)</span>
+        </h1>
+      </a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="z-10 flex flex-col items-center">
+
+      <!-- Título -->
+      <h2 class="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-4 text-center">
+        Decoraciones 3D
+      </h2>
+
+      <p class="text-base sm:text-lg text-white/80 text-center max-w-xl mb-1">
+        Figuras, macetas, esculturas, letras y piezas únicas
+      </p>
+
+      <p class="text-base sm:text-lg text-lime-300/80 mb-6 text-center max-w-xl">
+        ( Envíos a toda Zona Sur )
+      </p>
+
+      <!-- Carrusel -->
+      <div class="relative w-full max-w-sm sm:max-w-2xl md:max-w-4xl">
+
+        <div id="carousel" class="overflow-hidden relative rounded-2xl shadow-2xl">
+          <div
+            id="slides"
+            class="flex transition-transform duration-700 ease-in-out">
+          </div>
+        </div>
+
+        <!-- Botones -->
+        <button id="prev"
+          class="absolute left-2 top-1/2 -translate-y-1/2 
+          bg-black/60 hover:bg-lime-300 hover:text-black 
+          p-3 rounded-full transition">
+          ❮
+        </button>
+
+        <button id="next"
+          class="absolute right-2 top-1/2 -translate-y-1/2 
+          bg-black/60 hover:bg-lime-300 hover:text-black 
+          p-3 rounded-full transition">
+          ❯
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
+
+<img src="" alt="">
+<img src="" alt="">
+<img src="" alt="">
+<img src="" alt="">
