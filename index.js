@@ -1,61 +1,106 @@
-fetch('./productos.json')
-  .then(res => res.json())
-  .then(productos => {
-    const slides = document.getElementById('slides');
+const btnServicios = document.getElementById("btn-servicios");
+const btnTrabajos = document.getElementById("btn-trabajos");
+const btnWhatsapp = document.getElementById("btn-whatsapp");
+const btnMenu = document.getElementById("btn-menu");
+const verServicios = document.getElementById("ver-servicios");
+const verTrabajos = document.getElementById("ver-trabajos");
+const contacto = document.getElementById("contacto");
+const navBar = document.getElementById("navbar");
 
-    productos.forEach(producto => {
-      const slide = document.createElement('div');
-      slide.className = 'min-w-full bg-neutral-800/60 p-8 flex flex-col md:flex-row items-center gap-6';
+const closeModal = document.querySelectorAll(".close-modal");
 
-      slide.innerHTML = `
-        <img src="${producto.imagen}" class="w-64 h-64 object-cover rounded-2xl">
-        <div class="text-center md:w-full">
-          <h2 class="text-2xl font-bold">${producto.nombre}</h2>
-          <p class="text-white/70 mt-2">${producto.descripcion}</p>
-          <div class="flex justify-around items-center mt-4">
-            <span class="text-xl font-semibold"><span class="text-lime-200/70">EF</span> $${producto.precio}</span>
-            <button 
-              class="btn-consultar text-blue-400 font-semibold hover:underline">
-              Ver más
-            </button>
-          </div>
-        </div>
-      `;
-
-      // ✅ Evento correcto
-      slide.querySelector('.btn-consultar').addEventListener('click', () => {
-        sessionStorage.setItem('productoSeleccionado', producto.nombre);
-        window.location.href = `ventana.html?id=${producto.id}`;
-      });
-
-      slides.appendChild(slide);
-    });
-  });
-
-
-// Carrusel
-const slidesContainer = document.getElementById('slides');
-let index = 0;
-
-function showSlide(i) {
-  slidesContainer.style.transform = `translateX(-${i * 100}%)`;
+function modales(btn, contenedor){
+    btn.addEventListener("click", () => {
+        contenedor.classList.toggle("hidden");
+    })
 }
 
-document.getElementById('next').addEventListener('click', () => {
-  index = (index + 1) % slidesContainer.children.length;
-  showSlide(index);
+modales(btnServicios, verServicios);
+modales(btnTrabajos, verTrabajos);
+modales(btnWhatsapp, contacto);
+modales(btnMenu, navBar);
+
+const contenedoresTodos = [verServicios, verTrabajos, contacto, navBar];
+
+closeModal.forEach(btn => {
+    btn.addEventListener("click", () => {
+        contenedoresTodos.forEach(modal => modal.classList.add("hidden"));
+    })
 });
 
-document.getElementById('prev').addEventListener('click', () => {
-  index = (index - 1 + slidesContainer.children.length) % slidesContainer.children.length;
-  showSlide(index);
+
+let index = 0;
+
+function getSlideWidth() {
+    const slide = slider.children[0];
+    return slide.offsetWidth + 32; // ancho + gap
+}
+
+const slider = document.getElementById("slider");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+prevBtn.addEventListener("click", () => {
+  slider.scrollBy({ left: -slider.offsetWidth, behavior: "smooth" });
 });
 
-setInterval(() => {
-  if (slidesContainer.children.length === 0) return;
-  index = (index + 1) % slidesContainer.children.length;
-  showSlide(index);
-}, 6000);
+nextBtn.addEventListener("click", () => {
+  slider.scrollBy({ left: slider.offsetWidth, behavior: "smooth" });
+});
+
+// Modal Dos
+let modalIndex = 0;
+const modalSlider = document.getElementById("modalSlider");
+const btnModalPrev = document.getElementById("modal-prev");
+const btnModalNext = document.getElementById("modal-next");
+
+btnModalNext.addEventListener("click", () => {
+  const slides = modalSlider.children.length;
+  modalIndex = (modalIndex + 1) % slides;
+
+  modalSlider.scrollTo({
+    left: modalIndex * modalSlider.clientWidth,
+    behavior: "smooth"
+  });
+});
+
+btnModalPrev.addEventListener("click", () => {
+  const slides = modalSlider.children.length;
+  modalIndex = (modalIndex - 1 + slides) % slides;
+
+  modalSlider.scrollTo({
+    left: modalIndex * modalSlider.clientWidth,
+    behavior: "smooth"
+  });
+});
+
+//Whatsapp
+
+const formContacto = document.getElementById("form-contacto");
+
+if (formContacto) {
+  formContacto.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const nombre = document.getElementById("nombre").value;
+    const consulta = document.getElementById("consulta").value;
+    const mensaje = document.getElementById("mensaje");
+
+    const numero = "5491137659081";
+    const texto = `Hola! Soy ${nombre}. Quiero consultar por esta impresión 3D:\n${consulta}`;
+
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+    // Abrir WhatsApp
+    window.open(url, "_blank");
+
+    // Mensaje de enviado
+    mensaje.classList.remove("hidden");
+
+    // Opcional: resetear el form
+    formContacto.reset();
+  });
+}
 
 //Mostrar modal PROMO
 
@@ -78,4 +123,3 @@ window.addEventListener('load', () => {
     }
   });
 });
-
