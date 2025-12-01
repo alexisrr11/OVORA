@@ -28,61 +28,82 @@
 
 <body class="bg-gray-950 text-white font-sans">
 
-    <!-- HERO -->
-    <section class="relative min-h-screen flex items-center justify-center px-6 
-         bg-[url(https://servicio3d.es/wp-content/uploads/2023/11/IMPRESION-3D-PIEZAS-MECANICAS.webp)] 
-         bg-cover">
+  <!-- HERO -->
+  <section
+    class="relative min-h-screen flex items-center justify-center px-4 sm:px-10 
+    bg-[url(https://servicio3d.es/wp-content/uploads/2023/11/IMPRESION-3D-PIEZAS-MECANICAS.webp)] 
+    bg-cover bg-center">
 
-        <!-- Overlay oscuro -->
-        <div class="absolute inset-0 bg-black/80"></div>
+    <!-- Overlay oscuro -->
+    <div class="absolute inset-0 bg-black/80"></div>
 
-        <!-- Marca -->
-        <div class="w-full flex items-center justify-start p-3 absolute top-1 left-1 z-10">
-            <h1 class="text-left">
-                <strong class="text-2xl font-[cursive] text-lime-200">OVORA</strong>
-                <span class="text-xs text-gray-300">(Printing Dreams)</span>
-            </h1>
-        </div>
+    <!-- Marca -->
+    <div class="w-full flex items-center justify-start p-3 absolute top-1 left-1 z-10">
+      <h1>
+        <strong class="text-xl sm:text-2xl font-[cursive] text-lime-200">
+          OVORA
+        </strong>
+        <span class="block text-[10px] sm:text-xs text-gray-300">
+          (Printing Dreams)
+        </span>
+      </h1>
+    </div>
 
-        <button id="btn-menu" class="fixed right-3 top-3 text-3xl bg-black/60 text-lime-200 
-         rounded-full p-2 px-3 z-10 animate-pulse shadow-[0_0_25px_#a3e635]">
-            <i class='bx bxs-briefcase-alt'></i>
+    <!-- Botón menú -->
+    <button
+      id="btn-menu"
+      class="fixed right-3 top-3 text-2xl sm:text-3xl bg-black/70 text-lime-200 
+      rounded-full p-2 px-3 z-10 animate-pulse shadow-[0_0_20px_#a3e635]">
+      <i class='bx bxs-briefcase-alt'></i>
+    </button>
+
+    <!-- Contenido -->
+    <div class="w-full max-w-xl text-center z-10">
+
+      <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">
+        Impresiones 3D a medida para
+        <span class="text-lime-300 block mt-2">
+          tu hogar y tu negocio
+        </span>
+      </h2>
+
+      <p class="text-base sm:text-lg mb-8 text-gray-300 px-2">
+        Diseñamos e imprimimos soluciones personalizadas: repuestos,
+        organizadores, soportes, piezas técnicas, prototipos y productos
+        únicos creados según tu necesidad.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+
+        <button
+          id="btn-servicios"
+          class="bg-lime-300/70 hover:bg-lime-200/70 font-semibold px-6 py-3 rounded-xl text-sm sm:text-base">
+          Ver servicios
         </button>
 
+        <button
+          id="btn-trabajos"
+          class="border border-lime-200 px-6 py-3 rounded-xl hover:bg-lime-200/70 hover:text-black transition text-sm sm:text-base">
+          ¿Cómo trabajamos?
+        </button>
 
-        <div class="max-w-4xl text-center z-10">
-            <h2 class="text-4xl md:text-6xl font-bold mb-6">
-                Impresiones 3D a medida para
-                <span class="text-lime-300">tu hogar y tu negocio</span>
-            </h2>
+      </div>
 
-            <p class="text-lg mb-8 text-gray-300">
-                Diseñamos e imprimimos soluciones personalizadas: repuestos, organizadores, soportes,
-                piezas técnicas, prototipos y productos únicos creados según tu necesidad.
-            </p>
+      <p class="mt-6 text-xs sm:text-sm text-lime-100 italic">
+        🚚 Envíos a toda Zona Sur
+      </p>
 
-            <div class="flex justify-center gap-4 flex-wrap">
-                <button id="btn-servicios"
-                    class="bg-lime-300/70 hover:bg-lime-200/70 font-semibold px-6 py-3 rounded-xl">
-                    Ver servicios
-                </button>
+      <!-- WhatsApp -->
+      <button
+        id="btn-whatsapp"
+        class="fixed bottom-4 right-4 text-4xl z-10 hover:scale-110 transition">
+        <i class='rounded-full p-3 bg-green-400 bx bxl-whatsapp'></i>
+      </button>
 
-                <button id="btn-trabajos"
-                    class="border border-lime-200 px-6 py-3 rounded-xl hover:bg-lime-200/70 hover:text-black transition">
-                    ¿Cómo trabajamos?
-                </button>
-            </div>
+    </div>
 
-            <p class="mt-6 text-sm text-lime-100 italic">
-                🚚 Envíos a toda Zona Sur
-            </p>
+  </section>
 
-            <button id="btn-whatsapp" class="fixed bottom-6 right-5 text-4xl z-10">
-                <i class='rounded-full p-2 bg-green-400 bx bxl-whatsapp'></i>
-            </button>
-        </div>
-
-    </section>
 
     <nav id="navbar" class="hidden fixed top-0 h-screen w-full bg-black/80 p-16 z-20">
 
