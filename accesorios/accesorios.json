@@ -64,15 +64,6 @@
   },
   {
     "id": "a8",
-    "nombre": "Buda",
-    "descripcion": "Figura decorativa de Buda, ideal para espacios de relajación, decoración zen, escritorios o rincones especiales.",
-    "medidas": "Alto: 22cm - Base: 12cm",
-    "precio": 5500,
-    "transferencia": 6600,
-    "imagen": "../images/booda.jpeg"
-  },
-  {
-    "id": "a9",
     "nombre": "Trebol de la suerte",
     "descripcion": "Figura decorativa de trébol de la suerte, perfecta para regalar o decorar espacios con un toque simbólico y positivo.",
     "medidas": "Alto: 22cm - Base: 12cm",
@@ -81,7 +72,7 @@
     "imagen": "../images/trebolAzul.jpeg"
   },
   {
-    "id": "a10",
+    "id": "a9",
     "nombre": "Hueso collar perro",
     "descripcion": "Placa en forma de hueso para collar de perro, ideal para personalizar con nombre y agregar estilo a tu mascota.",
     "medidas": "Alto: 22cm - Base: 12cm",
