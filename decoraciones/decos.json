@@ -6,7 +6,7 @@
     "medidas": "Alto: 12cm - Ancho: 7cm",
     "precio": 1000,
     "transferencia": 1200,
-    "imagen": "./images/renoNavidad.jpeg"
+    "imagen": "../images/renoNavidad.jpeg"
   },
   {
     "id": "d2",
@@ -15,7 +15,7 @@
     "medidas": "Alto: 8cm - Ancho: 6cm",
     "precio": 1500,
     "transferencia": 1800,
-    "imagen": "./images/copoNieve.jpeg"
+    "imagen": "../images/copoNieve.jpeg"
   },
   {
     "id": "d3",
@@ -24,7 +24,7 @@
     "medidas": "Alto: 10cm - Ancho: 5cm",
     "precio": 900,
     "transferencia": 1100,
-    "imagen": "./images/arbolito.jpeg"
+    "imagen": "../images/arbolitoNuevo.jpeg"
   },
   {
     "id": "d4",
@@ -33,6 +33,6 @@
     "medidas": "Alto: 22cm - Base: 12cm",
     "precio": 5500,
     "transferencia": 6600,
-    "imagen": "./images/posaCelular.jpeg"
+    "imagen": "../images/posaCelular.jpeg"
   }
 ]

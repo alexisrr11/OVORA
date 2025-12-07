@@ -1,0 +1,38 @@
+[
+  {
+    "id": "p1",
+    "nombre": "Ganchos personalizados para cortinas",
+    "descripcion": "Juego de ganchos impresos en 3D, diseñados a medida para adaptarse al riel y al estilo de tu cortina. Ideales como reemplazo o mejora de piezas originales.",
+    "medidas": null,
+    "precio": null,
+    "transferencia": null,
+    "imagen": "../images/ganchosCortina.png"
+  },
+  {
+    "id": "p2",
+    "nombre": "Perilla personalizada",
+    "descripcion": "Perilla impresa en 3D para puertas, muebles o equipos. Adaptable en tamaño, forma y diseño según la necesidad del cliente o del mecanismo existente.",
+    "medidas": null,
+    "precio": null,
+    "transferencia": null,
+    "imagen": "../images/Perilla.png"
+  },
+  {
+    "id": "p3",
+    "nombre": "Engranaje a medida",
+    "descripcion": "Engranaje personalizado para reparación, prototipado o reemplazo de piezas dañadas. Fabricado según medidas específicas y tipo de encastre requerido.",
+    "medidas": null,
+    "precio": null,
+    "transferencia": null,
+    "imagen": "../images/Engranage.png"
+  },
+  {
+    "id": "p4",
+    "nombre": "Rejilla de ventilación personalizada para auto",
+    "descripcion": "Pieza de ventilación impresa en 3D para interior de vehículos. Diseñada a medida para adaptarse al modelo del auto y restaurar su funcionalidad original.",
+    "medidas": null,
+    "precio": null,
+    "transferencia": null,
+    "imagen": "../images/ventilacionAuto.png"
+  }
+]

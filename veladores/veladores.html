@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Veladores - MVP</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script type="module" src="./soluciones.js"></script>
+  <script type="module" src="./veladores.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body class="bg-neutral-900 text-white">
@@ -17,13 +18,60 @@
 
     <!-- Marca -->
     <div class="w-full flex items-center justify-start p-2 text-lime-200 md:absolute top-1 left-1">
-      <a href="./index.html">
+      <a href="../index.html">
         <h1 class="text-left text-xl">
           <strong class="text-2xl font-[cursive]">OVORA</strong> <span class="text-lime-50 text-xs">(Printing
             Dreams)</span>
         </h1>
       </a>
     </div>
+
+    <!-- Menu -->
+    <button id="btn-menu" class="fixed right-3 top-3 text-3xl bg-black/60 text-lime-200 
+         rounded-full p-2 px-3 z-10 animate-pulse shadow-[0_0_25px_#a3e635]">
+            <i class='bx bxs-briefcase-alt'></i>
+    </button>
+
+    <nav id="navbar" class="hidden fixed top-0 h-screen w-full bg-black/95 p-16 z-20">
+
+        <h2 class="text-center p-4 text-4xl font-bold font-[cursive]">Nuestros Trabajos</h2>
+
+        <button id="cruz" class="close-modal fixed top-5 right-5 text-3xl font-bold text-white">
+            ×
+        </button>
+
+        <ul class="flex flex-col gap-10 justify-center text-center pt-10">
+            <li>
+                <a
+                class="text-3xl font-semibold bg-lime-300/70 p-3 rounded-lg"
+                 href="../index.html">
+                 Página Principal
+                </a>
+            </li>
+            <li>
+                <a
+                class="text-3xl font-semibold bg-lime-300/70 p-3 rounded-lg"
+                 href="../piezas/piezas.html">
+                 Piezas Personalizadas
+                </a>
+            </li>
+            <li>
+                <a
+                class="text-3xl font-semibold bg-lime-300/70 p-3 rounded-lg"
+                 href="../decoraciones/decoraciones.html">
+                 Decoraciones
+                </a>
+            </li>
+            <li>
+                <a
+                class="text-3xl font-semibold bg-lime-300/70 p-3 rounded-lg"
+                 href="../accesorios/accesorios.html">
+                 Accesorios
+                </a>
+            </li>
+        </ul>
+
+    </nav>
 
     <!-- Título -->
     <h2 class="text-4xl md:text-6xl font-extrabold mb-4 text-center">Veladores modernos</h2>

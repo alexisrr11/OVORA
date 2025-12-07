@@ -1,21 +1,25 @@
-async function cargarProducto() {
+async function cargarProducto() { 
   const params = new URLSearchParams(window.location.search)
   const id = params.get('id')
 
   const section = document.querySelector('section')
 
   try {
-    // Traemos ambos JSON en paralelo
-    const [resProductos, resDecos] = await Promise.all([
-      fetch('./productos.json'),
-      fetch('./decos.json')
+    // Traemos los 4 JSON en paralelo (ahora incluye accesorios)
+    const [resVeladores, resDecos, resPiezas, resAccesorios] = await Promise.all([
+      fetch('./veladores/veladores.json'),
+      fetch('./decoraciones/decos.json'),
+      fetch('./piezas/piezas.json'),
+      fetch('./accesorios/accesorios.json')
     ])
 
-    const productos = await resProductos.json()
+    const veladores = await resVeladores.json()
     const decoraciones = await resDecos.json()
+    const piezas = await resPiezas.json()
+    const accesorios = await resAccesorios.json()
 
-    // Unimos los arrays
-    const todos = [...productos, ...decoraciones]
+    // Unimos todos los arrays
+    const todos = [...veladores, ...decoraciones, ...piezas, ...accesorios]
 
     // Buscamos el producto por id
     const producto = todos.find(p => p.id == id)
@@ -30,15 +34,14 @@ async function cargarProducto() {
       return
     }
 
-    section.innerHTML += `
-      <div class="bg-neutral-800/70 p-8 rounded-2xl shadow-xl max-w-xl w-full">
-        <img id="imagenProducto" src="${producto.imagen}" 
-        class="w-full h-80 object-cover rounded-xl mb-6 cursor-zoom-in">
+    // Si no hay medidas
+    const medidasHTML = producto.medidas
+      ? `<p class="text-white/70 mt-2">${producto.medidas}</p>`
+      : ""
 
-        <h2 class="text-3xl font-bold">${producto.nombre}</h2>
-        <p class="text-lime-200/70 mt-2">${producto.descripcion}</p>
-        <p class="text-white/70 mt-2">${producto.medidas}</p>
-
+    // Si no hay precio (caso piezas personalizadas)
+    const preciosHTML = (producto.precio && producto.transferencia)
+      ? `
         <div class="flex justify-around">
           <span class="block mt-6 text-xl font-semibold">
             <span class="text-lime-200/70">EF</span> $${producto.precio}
@@ -47,17 +50,51 @@ async function cargarProducto() {
             <span class="text-red-200/70">TR</span> $${producto.transferencia}
           </span>
         </div>
+      `
+      : `
+        <p class="mt-6 text-gray-300/70 text-lg text-center">
+          Pieza personalizada – consultar precio
+        </p>
+      `
 
-        <a href="index.html" class="mt-8 inline-block text-blue-400 hover:underline">
+    section.innerHTML += `
+      <div class="bg-neutral-800/70 p-8 rounded-2xl shadow-xl max-w-xl w-full">
+        <img id="imagenProducto" src="${producto.imagen}" 
+          class="w-full h-80 object-cover rounded-xl mb-6 cursor-zoom-in">
+
+        <h2 class="text-3xl font-bold">${producto.nombre}</h2>
+        <p class="text-lime-200/70 mt-2">${producto.descripcion}</p>
+        ${medidasHTML}
+        ${preciosHTML}
+
+        <a id="btn-back" href="#" class="mt-8 inline-block text-blue-400 hover:underline">
           ← Volver
         </a>
+
       </div>
     `
-    // Activar zoom una vez que la imagen existe en el DOM
-    const img = document.getElementById('imagenProducto');
-    if (img) {
-      activarZoom(img);
+
+    // ✅ JUSTO ACA pegás esto:
+    const btnBack = document.getElementById("btn-back")
+
+    if (btnBack) {
+      btnBack.addEventListener("click", (e) => {
+        e.preventDefault()
+
+        if (window.history.length > 1) {
+          window.history.back()
+        } else {
+          window.location.href = "../index.html"
+        }
+      })
     }
+
+    // Activar zoom una vez que la imagen existe en el DOM
+    const img = document.getElementById('imagenProducto')
+    if (img) {
+      activarZoom(img)
+    }
+
   } catch (error) {
     console.error(error)
     section.innerHTML = `

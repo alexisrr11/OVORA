@@ -1,0 +1,93 @@
+[
+  {
+    "id": "a1",
+    "nombre": "Baby shower cartel",
+    "descripcion": "Cartel decorativo ideal para baby showers, mesas dulces, centros de mesa o sesiones de fotos. Aporta un toque tierno y personalizado al evento.",
+    "medidas": "Alto: 12cm - Ancho: 7cm",
+    "precio": 1000,
+    "transferencia": 1200,
+    "imagen": "../images/babyShow.jpeg"
+  },
+  {
+    "id": "a2",
+    "nombre": "Cartel feliz cumpleaños",
+    "descripcion": "Cartel decorativo para cumpleaños, ideal para decorar mesas, tortas, rincones especiales o acompañar regalos.",
+    "medidas": "Alto: 8cm - Ancho: 6cm",
+    "precio": 1500,
+    "transferencia": 1800,
+    "imagen": "../images/happyDorado.jpeg"
+  },
+  {
+    "id": "a3",
+    "nombre": "Cartel feliz cumpleaños nena",
+    "descripcion": "Detalle decorativo pensado especialmente para cumpleaños infantiles, perfecto para ambientar mesas temáticas y sesiones de fotos.",
+    "medidas": "Alto: 10cm - Ancho: 5cm",
+    "precio": 900,
+    "transferencia": 1100,
+    "imagen": "../images/happyRosa.jpeg"
+  },
+  {
+    "id": "a4",
+    "nombre": "Soporte para Celular",
+    "descripcion": "Soporte resistente diseñado para sostener celulares de forma segura, ideal para videollamadas, ver videos o trabajar con manos libres.",
+    "medidas": "Alto: 22cm - Base: 12cm",
+    "precio": 5500,
+    "transferencia": 6600,
+    "imagen": "../images/posaCelular.jpeg"
+  },
+  {
+    "id": "a5",
+    "nombre": "Numero mickey mouse",
+    "descripcion": "Número decorativo con diseño de Mickey Mouse, ideal para tortas de cumpleaños, candy bar y decoraciones temáticas.",
+    "medidas": "Alto: 22cm - Base: 12cm",
+    "precio": 5500,
+    "transferencia": 6600,
+    "imagen": "../images/mikMouse.jpeg"
+  },
+  {
+    "id": "a6",
+    "nombre": "Numero para torta",
+    "descripcion": "Número decorativo especialmente diseñado para colocar sobre tortas de cumpleaños o mesas dulces.",
+    "medidas": "Alto: 22cm - Base: 12cm",
+    "precio": 5500,
+    "transferencia": 6600,
+    "imagen": "../images/unoMicMouse.jpeg"
+  },
+  {
+    "id": "a7",
+    "nombre": "Broche Alga",
+    "descripcion": "Broche decorativo con diseño de alga, ideal como detalle original para souvenirs, manualidades o accesorios personalizados.",
+    "medidas": "Alto: 22cm - Base: 12cm",
+    "precio": 5500,
+    "transferencia": 6600,
+    "imagen": "../images/brocheNafta.jpeg"
+  },
+  {
+    "id": "a8",
+    "nombre": "Buda",
+    "descripcion": "Figura decorativa de Buda, ideal para espacios de relajación, decoración zen, escritorios o rincones especiales.",
+    "medidas": "Alto: 22cm - Base: 12cm",
+    "precio": 5500,
+    "transferencia": 6600,
+    "imagen": "../images/booda.jpeg"
+  },
+  {
+    "id": "a9",
+    "nombre": "Trebol de la suerte",
+    "descripcion": "Figura decorativa de trébol de la suerte, perfecta para regalar o decorar espacios con un toque simbólico y positivo.",
+    "medidas": "Alto: 22cm - Base: 12cm",
+    "precio": 5500,
+    "transferencia": 6600,
+    "imagen": "../images/trebolAzul.jpeg"
+  },
+  {
+    "id": "a10",
+    "nombre": "Hueso collar perro",
+    "descripcion": "Placa en forma de hueso para collar de perro, ideal para personalizar con nombre y agregar estilo a tu mascota.",
+    "medidas": "Alto: 22cm - Base: 12cm",
+    "precio": 5500,
+    "transferencia": 6600,
+    "imagen": "../images/collarPerro.jpeg"
+  }
+]
+

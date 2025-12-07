@@ -1,0 +1,41 @@
+[
+  {
+    "id": "1",
+    "nombre": "Velador Luna con imagen",
+    "descripcion": "Revela una imagen detallada y suave, creando un efecto cálido, mágico y lleno de profundidad.",
+    "medidas": "Alto: 15cm - CircunferenciaMax: 12cm",
+    "precio": 18000,
+    "transferencia": 21000, 
+    "imagen": "../images/lunaConImagen.png"
+  },
+  {
+    "id": "2",
+    "nombre": "Velador Eclipse",
+    "descripcion": "Diseño moderno con lineas detalladas (base de plastico)",
+    "medidas": "Alto: 16cm - CircunferenciaMax: 10cm",
+    "precio": 15000,
+    "transferencia": 18000, 
+    "imagen": "../images/eclipceUno.jpeg"
+  },
+  {
+    "id": "3",
+    "nombre": "Velador Rectangular",
+    "descripcion": "Pantalla suave con luz cálida (base de plastico)",
+    "medidas": "Alto: 14cm - Ancho: 10cm x 8cm",
+    "precio": 12000,
+    "transferencia": 14500,
+    "imagen": "../images/rectangularUno.png"
+  },
+  {
+    "id": "4",
+    "nombre": "Velador Redondo",
+    "descripcion": "Estilo urbano con estructura minimalista (base de plastico)",
+    "medidas": "Alto: 10cm - CircunferenciaMax: 8cm",
+    "precio": 10000,
+    "transferencia": 12000, 
+    "imagen": "../images/redondaUno.png"
+  }
+]
+
+
+
