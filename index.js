@@ -28,24 +28,31 @@ closeModal.forEach(btn => {
     })
 });
 
-
-let index = 0;
-
-function getSlideWidth() {
-    const slide = slider.children[0];
-    return slide.offsetWidth + 32; // ancho + gap
-}
-
+//Modal Uno
 const slider = document.getElementById("slider");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
-prevBtn.addEventListener("click", () => {
-  slider.scrollBy({ left: -slider.offsetWidth, behavior: "smooth" });
+// Distancia de avance = ancho total visible
+const step = () => slider.offsetWidth;
+
+// 👉 Siguiente
+nextBtn.addEventListener("click", () => {
+  slider.scrollBy({ left: step(), behavior: "smooth" });
+    if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth - 5) {
+      slider.scrollTo({ left: 0, behavior: "smooth" });
+    }
 });
 
-nextBtn.addEventListener("click", () => {
-  slider.scrollBy({ left: slider.offsetWidth, behavior: "smooth" });
+// 👉 Anterior
+prevBtn.addEventListener("click", () => {
+  slider.scrollBy({ left: -step(), behavior: "smooth" });
+    if (slider.scrollLeft <= 0) {
+      slider.scrollTo({
+        left: slider.scrollWidth,
+        behavior: "smooth"
+      });
+    }
 });
 
 // Modal Dos
@@ -123,3 +130,4 @@ window.addEventListener('load', () => {
     }
   });
 });
+
