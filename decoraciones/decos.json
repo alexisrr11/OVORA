@@ -28,11 +28,11 @@
   },
   {
     "id": "d4",
-    "nombre": "Soporte para celular souvenir",
-    "descripcion": "Soporte para celular con diseño moderno y funcional, perfecto como recuerdo, regalo o para organizar tu espacio con estilo.",
+    "nombre": "Buda",
+    "descripcion": "Figura decorativa de Buda, ideal para espacios de relajación, decoración zen, escritorios o rincones especiales.",
     "medidas": "Alto: 22cm - Base: 12cm",
     "precio": 5500,
     "transferencia": 6600,
-    "imagen": "../images/posaCelular.jpeg"
+    "imagen": "../images/booda.jpeg"
   }
 ]
