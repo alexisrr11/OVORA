@@ -5,41 +5,55 @@ async function cargarProducto() {
   const section = document.querySelector('section')
 
   try {
-    // Traemos los 4 JSON en paralelo (ahora incluye accesorios)
-    const [resVeladores, resDecos, resPiezas, resAccesorios] = await Promise.all([
+    // 🔹 Traemos TODOS los JSON (incluye letreros)
+    const [
+      resVeladores,
+      resDecos,
+      resPiezas,
+      resAccesorios,
+      resLetreros
+    ] = await Promise.all([
       fetch('./veladores/veladores.json'),
       fetch('./decoraciones/decos.json'),
       fetch('./piezas/piezas.json'),
-      fetch('./accesorios/accesorios.json')
+      fetch('./accesorios/accesorios.json'),
+      fetch('./letreros/letreros.json')
     ])
 
     const veladores = await resVeladores.json()
     const decoraciones = await resDecos.json()
     const piezas = await resPiezas.json()
     const accesorios = await resAccesorios.json()
+    const letreros = await resLetreros.json()
 
-    // Unimos todos los arrays
-    const todos = [...veladores, ...decoraciones, ...piezas, ...accesorios]
+    // 🔹 Unimos todos los productos
+    const todos = [
+      ...veladores,
+      ...decoraciones,
+      ...piezas,
+      ...accesorios,
+      ...letreros
+    ]
 
-    // Buscamos el producto por id
+    // 🔹 Buscamos el producto por ID
     const producto = todos.find(p => p.id == id)
 
     if (!producto) {
       section.innerHTML = `
         <p class="text-red-400 text-xl">❌ Producto no encontrado</p>
-        <a href="index.html" class="mt-4 inline-block text-blue-400 hover:underline">
+        <a href="../index.html" class="mt-4 inline-block text-blue-400 hover:underline">
           ← Volver
         </a>
       `
       return
     }
 
-    // Si no hay medidas
+    // 🔹 Medidas (si existen)
     const medidasHTML = producto.medidas
       ? `<p class="text-white/70 mt-2">${producto.medidas}</p>`
       : ""
 
-    // Si no hay precio (caso piezas personalizadas)
+    // 🔹 Precios (si existen)
     const preciosHTML = (producto.precio && producto.transferencia)
       ? `
         <div class="flex justify-around">
@@ -53,12 +67,13 @@ async function cargarProducto() {
       `
       : `
         <p class="mt-6 text-gray-300/70 text-lg text-center">
-          Pieza personalizada – consultar precio
+          Producto personalizado – consultar precio
         </p>
       `
 
-    section.innerHTML += `
-      <div class="bg-neutral-800/70 p-8 rounded-2xl shadow-xl max-w-xl w-full">
+    // 🔹 Render
+    section.innerHTML = `
+      <div class="bg-neutral-800/70 p-8 rounded-2xl shadow-xl max-w-xl w-full mx-auto">
         <img id="imagenProducto" src="${producto.imagen}" 
           class="w-full h-80 object-cover rounded-xl mb-6 cursor-zoom-in">
 
@@ -70,17 +85,14 @@ async function cargarProducto() {
         <a id="btn-back" href="#" class="mt-8 inline-block text-blue-400 hover:underline">
           ← Volver
         </a>
-
       </div>
     `
 
-    // ✅ JUSTO ACA pegás esto:
+    // 🔹 Botón volver
     const btnBack = document.getElementById("btn-back")
-
     if (btnBack) {
       btnBack.addEventListener("click", (e) => {
         e.preventDefault()
-
         if (window.history.length > 1) {
           window.history.back()
         } else {
@@ -89,9 +101,9 @@ async function cargarProducto() {
       })
     }
 
-    // Activar zoom una vez que la imagen existe en el DOM
+    // 🔹 Zoom imagen
     const img = document.getElementById('imagenProducto')
-    if (img) {
+    if (img && typeof activarZoom === "function") {
       activarZoom(img)
     }
 

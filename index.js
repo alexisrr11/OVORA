@@ -109,8 +109,7 @@ if (formContacto) {
   });
 }
 
-//Mostrar modal PROMO
-
+/*Mostrar modal PROMO
 window.addEventListener('load', () => {
   const modal = document.getElementById('modalInicio');
   const cerrar = document.getElementById('cerrarModal');
@@ -129,5 +128,5 @@ window.addEventListener('load', () => {
       modal.classList.add('hidden');
     }
   });
-});
+}); */
 

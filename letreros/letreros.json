@@ -1,0 +1,47 @@
+[
+  {
+    "id": "l1",
+    "nombre": "Letrero 3D Personalizado",
+    "descripcion": "Letrero en letras 3D personalizadas con el nombre o palabra que elijas. Ideal para negocios, hogares, eventos o marcas.",
+    "medidas": null,
+    "precio": null,
+    "transferencia": null,
+    "imagen": "../images/NumeracionYcalle.png"
+  },
+  {
+    "id": "l2",
+    "nombre": "Letras 3D Individuales",
+    "descripcion": "Letras 3D sueltas para armar palabras, nombres o frases. Disponibles en distintos tamaños y colores.",
+    "medidas": null,
+    "precio": null,
+    "transferencia": null,
+    "imagen": "../images/Direccion.png"
+  },
+  {
+    "id": "l3",
+    "nombre": "Números 3D Decorativos",
+    "descripcion": "Números 3D ideales para direcciones, aniversarios, cumpleaños o señalética. Resistentes y personalizables.",
+    "medidas": null,
+    "precio": null,
+    "transferencia": null,
+    "imagen": "../images/DireccionConBase.png"
+  },
+  {
+    "id": "l4",
+    "nombre": "Cartel 3D para Negocios",
+    "descripcion": "Cartel 3D profesional para fachadas o interiores. Diseño moderno que destaca tu marca o emprendimiento.",
+    "medidas": null,
+    "precio": null,
+    "transferencia": null,
+    "imagen": "../images/cartelOrianaRosa.png"
+  },
+  {
+    "id": "l5",
+    "nombre": "Cartel 3D para Negocios",
+    "descripcion": "Cartel 3D profesional para fachadas o interiores. Diseño moderno que destaca tu marca o emprendimiento.",
+    "medidas": null,
+    "precio": null,
+    "transferencia": null,
+    "imagen": "../images/CartelOvora.jpeg"
+  }
+]

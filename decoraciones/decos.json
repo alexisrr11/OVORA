@@ -34,5 +34,23 @@
     "precio": 5500,
     "transferencia": 6600,
     "imagen": "../images/booda.jpeg"
+  },
+  {
+    "id": "d5",
+    "nombre": "Buda",
+    "descripcion": "Figura decorativa de Buda, ideal para espacios de relajación, decoración zen, escritorios o rincones especiales.",
+    "medidas": "Alto: 22cm - Base: 12cm",
+    "precio": 5500,
+    "transferencia": 6600,
+    "imagen": "../images/Pikachu.jpeg"
+  },
+  {
+    "id": "d6",
+    "nombre": "Buda",
+    "descripcion": "Figura decorativa de Buda, ideal para espacios de relajación, decoración zen, escritorios o rincones especiales.",
+    "medidas": "Alto: 22cm - Base: 12cm",
+    "precio": 5500,
+    "transferencia": 6600,
+    "imagen": "../images/Labubu.jpeg"
   }
 ]
