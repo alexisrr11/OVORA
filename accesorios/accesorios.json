@@ -81,13 +81,13 @@
     "imagen": "../images/collarPerro.jpeg"
   },
   {
-    "id": "a10",
-    "nombre": "Hueso collar perro",
-    "descripcion": "Placa en forma de hueso para collar de perro, ideal para personalizar con nombre y agregar estilo a tu mascota.",
-    "medidas": "Alto: 22cm - Base: 12cm",
-    "precio": 5500,
-    "transferencia": 6600,
-    "imagen": "../images/CartelAlma.jpeg"
-  }
+  "id": "a10",
+  "nombre": "Llavero con nombre",
+  "descripcion": "Llavero personalizado impreso en 3D, ideal para llevar tus llaves con estilo o regalar. Podés elegir el nombre y el diseño, con un acabado prolijo y resistente para el uso diario.",
+  "medidas": "Alto: 4cm - Ancho: 10cm",
+  "precio": 5500,
+  "transferencia": 6600,
+  "imagen": "../images/CartelAlma.jpeg"
+}
 ]
 

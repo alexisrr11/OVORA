@@ -28,8 +28,8 @@
   },
   {
     "id": "l4",
-    "nombre": "Cartel 3D para Negocios",
-    "descripcion": "Cartel 3D profesional para fachadas o interiores. Diseño moderno que destaca tu marca o emprendimiento.",
+    "nombre": "Cartel 3D habitaciones",
+    "descripcion": "Letrero en letras 3D personalizadas con el nombre o palabra que elijas para puertas o dormitorios.",
     "medidas": null,
     "precio": null,
     "transferencia": null,
@@ -43,5 +43,14 @@
     "precio": null,
     "transferencia": null,
     "imagen": "../images/CartelOvora.jpeg"
+  },
+  {
+    "id": "l6",
+    "nombre": "Cartel 3D para Negocios",
+    "descripcion": "Cartel 3D profesional para fachadas o interiores. Diseño moderno que destaca tu marca o emprendimiento.",
+    "medidas": null,
+    "precio": null,
+    "transferencia": null,
+    "imagen": "../images/SingsLetrero.png"
   }
 ]
