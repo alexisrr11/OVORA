@@ -109,6 +109,48 @@ if (formContacto) {
   });
 }
 
+const imagenNavbar = document.getElementById("imagen-navbar");
+
+const arrayAnchord = [
+  document.getElementById("a-personalizadas"),
+  document.getElementById("a-veladores"),
+  document.getElementById("a-decoraciones"),
+  document.getElementById("a-accesorios"),
+  document.getElementById("a-letreros")
+];
+
+const imagenesA = [ 
+  "./images/ventilacionAuto.png",
+  "./images/eclipceUno.jpeg",
+  "./images/renoNavidad.jpeg",
+  "./images/happyRosa.jpeg",
+  "./images/DireccionConBase.png"
+];
+
+let imgNav = 0;
+
+const CLASE_ACTIVA = "bg-lime-300/70";
+const CLASE_INACTIVA = "bg-lime-50/30";
+
+function cambiarImagenNav() {
+  imagenNavbar.src = imagenesA[imgNav];
+
+  arrayAnchord.forEach(a => {
+    a.classList.remove(CLASE_ACTIVA);
+    a.classList.add(CLASE_INACTIVA);
+  });
+
+  arrayAnchord[imgNav].classList.add(CLASE_ACTIVA);
+  arrayAnchord[imgNav].classList.remove(CLASE_INACTIVA);
+
+  imgNav = (imgNav + 1) % imagenesA.length;
+}
+
+setInterval(cambiarImagenNav, 2500);
+
+
+//
+
 /*Mostrar modal PROMO
 window.addEventListener('load', () => {
   const modal = document.getElementById('modalInicio');
