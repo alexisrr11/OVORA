@@ -18,15 +18,14 @@ function normalize(text) {
         .toString()
         .toLowerCase()
         .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .replace(/ñ/g, "n");
+        .replace(/[\u0300-\u036f]/g, "");
 }
 
 function getBotResponse(text) {
     const clean = normalize(text);
 
     for (const item of FAQ) {
-        if (item.keywords.some(k => clean.includes(k))) {
+        if (item.keywords.some(k => clean.includes(normalize(k)))) {
             return item.answer;
         }
     }

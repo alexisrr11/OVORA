@@ -93,11 +93,10 @@ const FAQ = [
     {
         intent: "disenos_y_logos",
         keywords: [
-            "diseños",
-            "diseñar",
+            "diseño",
+            "diseña",
             "diseños a medida",
             "logo",
-            "logos",
             "tienen diseños",
             "diseño personalizado",
             "me pueden diseñar",
