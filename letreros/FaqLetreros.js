@@ -3,11 +3,30 @@ const FAQ = [
     {
         intent: "precio",
         keywords: [
-            "precio", "costo", "vale", "presupuesto", "cotizacion", "sale"
+            "precio",
+            "costo",
+            "costar",
+            "vale",
+            "valor",
+            "cotizacion",
+            "sale"
         ],
         answer:
             "El precio depende del tamaño del letrero, tipografía, color y si es para interior o exterior. Como referencia: letras de hasta 22 cm, con tipografía estándar, tienen un valor aproximado de $4.500 por letra. Para algo a medida, escribinos y te armamos una cotización sin compromiso 😊"
     },
+    {
+        intent: "pagos",
+        keywords: [
+            "pago",
+            "pagos",
+            "formas de pago",
+            "como pagar",
+            "medios de pago",
+            "presupuesto"
+        ],
+        answer: "Aceptamos efectivo, Mercado Pago y transferencia bancaria."
+    },
+
     {
         intent: "materiales",
         keywords: [
