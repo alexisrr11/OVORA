@@ -58,19 +58,45 @@ const FAQ = [
         ],
         answer:
             "¡Gracias por contactarte con OVORA! 💚 Cuando quieras, escribinos y te ayudamos a darle visibilidad a tu negocio con un letrero 3D."
+    },
+    {
+        intent: "ubicacion",
+        keywords: [
+            "donde estan",
+            "ubicacion",
+            "de donde son",
+            "zona",
+            "local",
+            "direccion"
+        ],
+        answer:
+            "Estamos en San José, Temperley (Zona Sur). Trabajamos principalmente por encargo y con envíos 🙂"
+    },
+    {
+        intent: "contacto",
+        keywords: [
+            "contacto",
+            "comunicarme",
+            "whatsapp",
+            "hablar",
+            "mensaje",
+            "hacer una consulta"
+        ],
+        answer:
+            "Podés comunicarte haciendo click en \"Ver más\" en cualquier letrero que te interese. Al final de la página vas a encontrar un formulario que se envía directo a nuestro WhatsApp 😊"
     }
 
 ];
 
 
 function normalize(text) {
-  if (!text) return "";
+    if (!text) return "";
 
-  return text
-    .toString()
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
+    return text
+        .toString()
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
 }
 
 function getBotResponse(text) {
