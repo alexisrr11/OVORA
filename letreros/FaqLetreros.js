@@ -94,6 +94,7 @@ const FAQ = [
         intent: "disenos_y_logos",
         keywords: [
             "diseños",
+            "diseñar",
             "diseños a medida",
             "logo",
             "logos",
