@@ -14,7 +14,7 @@ const FAQ = [
     {
         intent: "precio",
         keywords: [
-            "precio", "costo", "vale", "cuanto", "presupuesto", "cotizacion"
+            "precio", "costo", "vale", "presupuesto", "cotizacion", "sale"
         ],
         answer:
             "El precio depende del tamaño del letrero, tipografía, color y si es para interior o exterior. Como referencia: letras de hasta 22 cm, con tipografía estándar, tienen un valor aproximado de $4.500 por letra. Para algo a medida, escribinos y te armamos una cotización sin compromiso 😊"
@@ -38,7 +38,7 @@ const FAQ = [
     {
         intent: "luz",
         keywords: [
-            "luz", "iluminado", "led", "luminaria", "con luz", "iluminaciones"
+            "luz", "iluminado", "led", "luminaria", "con luz", "iluminaciones", "luminoso"
         ],
         answer:
             "Sí 💡 Nuestros instaladores ofrecen el servicio de agregado de luminaria en los letreros, ideal si buscás mayor visibilidad."
