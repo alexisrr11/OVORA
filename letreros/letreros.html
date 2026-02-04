@@ -7,7 +7,11 @@
   <title>Letreros y Números 3D - OVORA</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="module" src="./letreros.js"></script>
+  <script type="module" src="../chatBot.js"></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+  <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-neutral-900 text-white">
@@ -117,6 +121,44 @@
       </div>
 
     </div>
+
+    <!-- ChatBot OVORA -->
+    <div id="chatbot-container" class="fixed bottom-5 right-5 z-50">
+
+      <!-- Botón flotante -->
+      <button id="chatbot-toggle" class="bg-lime-400 hover:bg-lime-500 text-black p-4 rounded-full shadow-xl
+           flex items-center justify-center text-2xl">
+        <i class="bx bx-message-circle-dots"></i>
+      </button>
+
+      <!-- Ventana -->
+      <div id="chatbot-window" class="hidden w-80 h-[420px] bg-neutral-900 border border-lime-400/30
+           rounded-2xl shadow-2xl mt-3 flex flex-col overflow-hidden">
+
+        <!-- Header -->
+        <div class="flex justify-center items-center gap-1 bg-lime-400 text-black p-3 font-bold text-center">
+          <h3>OVORA · Asistente</h3><i class="bx bx-robot text-xl"></i>
+        </div>
+
+        <!-- Mensajes -->
+        <div id="chatbot-messages" class="flex-1 p-3 space-y-2 overflow-y-auto text-sm">
+          <div class="bg-neutral-800 p-2 rounded-lg max-w-[85%]">
+            Hola 👋 ¿En qué puedo ayudarte con nuestros letreros 3D?
+          </div>
+        </div>
+
+        <!-- Input -->
+        <div class="p-2 border-t border-lime-400/20 flex gap-2">
+          <input id="chatbot-input" type="text" placeholder="Escribí tu consulta…" class="flex-1 bg-neutral-800 text-white rounded-lg px-3 py-2 text-sm
+               focus:outline-none focus:ring-1 focus:ring-lime-400" />
+          <button id="chatbot-send" class="bg-lime-400 text-black px-3 rounded-lg font-semibold">
+            ➤
+          </button>
+        </div>
+
+      </div>
+    </div>
+
 
   </section>
 
