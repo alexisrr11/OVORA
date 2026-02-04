@@ -133,17 +133,22 @@ const CLASE_ACTIVA = "bg-lime-300/70";
 const CLASE_INACTIVA = "bg-lime-50/30";
 
 function cambiarImagenNav() {
-  imagenNavbar.src = imagenesA[imgNav];
+  const img = new Image();
+  img.src = imagenesA[imgNav];
 
-  arrayAnchord.forEach(a => {
-    a.classList.remove(CLASE_ACTIVA);
-    a.classList.add(CLASE_INACTIVA);
-  });
+  img.onload = () => {
+    imagenNavbar.src = img.src;
 
-  arrayAnchord[imgNav].classList.add(CLASE_ACTIVA);
-  arrayAnchord[imgNav].classList.remove(CLASE_INACTIVA);
+    arrayAnchord.forEach(a => {
+      a.classList.remove(CLASE_ACTIVA);
+      a.classList.add(CLASE_INACTIVA);
+    });
 
-  imgNav = (imgNav + 1) % imagenesA.length;
+    arrayAnchord[imgNav].classList.add(CLASE_ACTIVA);
+    arrayAnchord[imgNav].classList.remove(CLASE_INACTIVA);
+
+    imgNav = (imgNav + 1) % imagenesA.length;
+  };
 }
 
 setInterval(cambiarImagenNav, 2500);
