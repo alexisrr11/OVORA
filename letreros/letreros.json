@@ -1,12 +1,12 @@
 [
   {
     "id": "l1",
-    "nombre": "Letrero 3D Personalizado",
-    "descripcion": "Letrero en letras 3D personalizadas con el nombre o palabra que elijas. Ideal para negocios, hogares, eventos o marcas.",
+    "nombre": "Cartel 3D para Negocios",
+    "descripcion": "Cartel 3D profesional para fachadas o interiores. Diseño moderno que destaca tu marca o emprendimiento.",
     "medidas": null,
     "precio": null,
     "transferencia": null,
-    "imagen": "../images/letreroELGaucho.jpeg"
+    "imagen": "../images/CartelOvora.jpeg"
   },
   {
     "id": "l2",
@@ -15,10 +15,19 @@
     "medidas": null,
     "precio": null,
     "transferencia": null,
-    "imagen": "../images/letreroSoler.jpeg"
+    "imagen": "../images/letreroELGaucho.jpeg"
   },
   {
     "id": "l3",
+    "nombre": "Letrero 3D Personalizado",
+    "descripcion": "Letrero en letras 3D personalizadas con el nombre o palabra que elijas. Ideal para negocios, hogares, eventos o marcas.",
+    "medidas": null,
+    "precio": null,
+    "transferencia": null,
+    "imagen": "../images/letreroSoler.jpeg"
+  },
+  {
+    "id": "l4",
     "nombre": "Letrero informativo",
     "descripcion": "Letrero para indicaciones ideal para señalización y orientación en espacios comerciales o profesionales.",
     "medidas": null,
@@ -27,7 +36,7 @@
     "imagen": "../images/letreroAlergista.jpeg"
   },
   {
-    "id": "l4",
+    "id": "l5",
     "nombre": "Números 3D Decorativos",
     "descripcion": "Números 3D ideales para direcciones, aniversarios, cumpleaños o señalética. Resistentes y personalizables.",
     "medidas": null,
@@ -36,7 +45,7 @@
     "imagen": "../images/letrero123.jpeg"
   },
   {
-    "id": "l5",
+    "id": "l6",
     "nombre": "Letras 3D doble color",
     "descripcion": "Letras 3D personalizadas en doble color, ideales para cartelería, marcas y decoración, con excelente terminación y gran impacto visual. Opcionalmente pueden incorporar iluminación LED.",
     "medidas": null,
@@ -45,22 +54,13 @@
     "imagen": "../images/letraA.jpeg"
   },
   {
-    "id": "l6",
+    "id": "l7",
     "nombre": "Cartel 3D habitaciones",
     "descripcion": "Letrero en letras 3D personalizadas con el nombre o palabra que elijas para puertas o dormitorios.",
     "medidas": null,
     "precio": null,
     "transferencia": null,
     "imagen": "../images/CartelOrianaRosa.png"
-  },
-  {
-    "id": "l7",
-    "nombre": "Cartel 3D para Negocios",
-    "descripcion": "Cartel 3D profesional para fachadas o interiores. Diseño moderno que destaca tu marca o emprendimiento.",
-    "medidas": null,
-    "precio": null,
-    "transferencia": null,
-    "imagen": "../images/CartelOvora.jpeg"
   },
   {
     "id": "l8",
